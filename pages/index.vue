@@ -25,8 +25,8 @@ export default {
       fetch('/',{
         method: 'post',
         body: {
+          email: encodeURIComponent(this.email),
           text: encodeURIComponent(this.text),
-          email: encodeURIComponent(this.email)
         }
       })
       .then(res => console.log(res))
