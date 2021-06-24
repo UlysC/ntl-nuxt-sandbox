@@ -1,6 +1,9 @@
 <template>
   <section>
-    <form
+    <div style="width: 100px; height:80px;background-color:lightgrey;" @click="di">
+      click here
+    </div>
+    <form v-if="displayform"
       method="POST"
       action="/thanks"
       name="privacy"
@@ -17,10 +20,14 @@
 <script>
 export default {  
   data: () => ({
+    displayform: false,
     text: "",
     email: ""
   }),
   methods: {
+    di() {
+      this.displayform = !this.displayform
+    }
     // submit(){
     //   fetch('/',{
     //     method: 'post',
