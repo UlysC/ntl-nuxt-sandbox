@@ -10,6 +10,7 @@
       data-netlify="true"
       netlify-honeypot="bot-field"
     >
+      <input type="hidden" name="form-name" value="privacy" />
       <label>sometext: <input type="text" name="letext" v-model="text"/></label>
       <label>email: <input type="email" name="email" v-model="email"/></label>
       <button type="submit">u n s u b s c r i b e !</button>
