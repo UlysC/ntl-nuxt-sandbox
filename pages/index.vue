@@ -9,7 +9,7 @@
     >
       <label>sometext: <input type="text" name="letext" v-model="text"/></label>
       <label>email: <input type="email" name="email" v-model="email"/></label>
-      <button type="submit">u n s u b s c r i b e</button>
+      <button type="submit">u n s u b s c r i b e !</button>
     </form>
   </section>
 </template>
