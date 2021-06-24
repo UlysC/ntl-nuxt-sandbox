@@ -21,17 +21,17 @@ export default {
     text: ""
   }),
   methods: {
-    // submit(){
-    //   fetch('/',{
-    //     method: 'post',
-    //     body: {
-    //       email: encodeURIComponent(this.email),
-    //       text: encodeURIComponent(this.text),
-    //     }
-    //   })
-    //   .then(res => console.log(res))
-    //   .catch(err=> console.log(err))
-    // }
+    submit(){
+      fetch('/',{
+        method: 'post',
+        body: {
+          email: encodeURIComponent(this.email),
+          text: encodeURIComponent(this.text),
+        }
+      })
+      .then(res => console.log(res))
+      .catch(err=> console.log(err))
+    }
   }
 
 }
