@@ -1,11 +1,11 @@
 <template>
   <section>
     <form
-      action="POST"
+      method="POST"
+      action="/thanks"
       name="privacy"
       data-netlify="true"
       netlify-honeypot="bot-field"
-      @submit="submit"
     >
       <label>sometext: <input type="text" name="letext" v-model="text"/></label>
       <label>email: <input type="email" name="email" v-model="email"/></label>
@@ -21,17 +21,17 @@ export default {
     text: ""
   }),
   methods: {
-    submit(){
-      fetch('/',{
-        method: 'post',
-        body: {
-          email: encodeURIComponent(this.email),
-          text: encodeURIComponent(this.text),
-        }
-      })
-      .then(res => console.log(res))
-      .catch(err=> console.log(err))
-    }
+    // submit(){
+    //   fetch('/',{
+    //     method: 'post',
+    //     body: {
+    //       email: encodeURIComponent(this.email),
+    //       text: encodeURIComponent(this.text),
+    //     }
+    //   })
+    //   .then(res => console.log(res))
+    //   .catch(err=> console.log(err))
+    // }
   }
 
 }
